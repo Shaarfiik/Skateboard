@@ -1,52 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body class="page">
-  <div class="layout">
-    <div class="sidebar">
-      <h1 class="sidebar__logo">skateboard</h1>
-      <h1 class="sidebar__insert">MENU</h1>
-      <ul class="sidebar__list">
-        <li><img src="./img/red-home.svg" alt="">Discover</li>
-        <li><img src="./img/row.svg" alt="">Trending</li>
-        <li><img src="./img/stream.svg" alt="">Streaming</li>
-        <li><img src="./img/playlist.svg" alt="">Playlist</li>
-        <li><img src="./img/bookmark.svg" alt="">Bookmark</li>
-      </ul>
-        <img class="sidebar__line" src="./img/Line 1.svg" alt="line">
-      <h1 class="sidebar__insert">CATEGORY</h1>
-      <ul class="sidebar__list">
-        <li><img src="./img/home.svg" alt="">Live stream</li>
-        <li><img src="./img/row.svg" alt="">Tutorial</li>
-        <li><img src="./img/stream.svg" alt="">Competition</li>
-        <li><img src="./img/playlist.svg" alt="">Community</li>
-      </ul>
-        <img class="sidebar__line" src="./img/Line 1.svg" alt="line">
-      <label class="sidebar__bottom">
-        <input type="checkbox">
-        <span class="slider round"></span>
-      </label>
-      
+    <div class="layout">
+        <div class="sidebar">
+            <h1 class="sidebar__logo">skateboard</h1>
+            <h1 class="sidebar__insert">MENU</h1>
+            <ul class="sidebar__list">
+                <li class="bottom__active"><img src="./img/Home_light.svg" alt="">Discover</li>
+                <li><img src="./img/row.svg" alt="">Trending</li>
+                <li><img src="./img/stream.svg" alt="">Streaming</li>
+                <li><img src="./img/playlist.svg" alt="">Playlist</li>
+                <li><img src="./img/bookmark.svg" alt="">Bookmark</li>
+        </ul>
+            <img class="sidebar__line" src="./img/Line 1.svg" alt="line">
+        <h1 class="sidebar__insert">CATEGORY</h1>
+        <ul class="sidebar__list">
+            <li><img src="./img/home.svg" alt="">Live stream</li>
+            <li><img src="./img/row.svg" alt="">Tutorial</li>
+            <li><img src="./img/stream.svg" alt="">Competition</li>
+            <li><img src="./img/playlist.svg" alt="">Community</li>
+        </ul>
+            <img class="sidebar__line" src="./img/Line 1.svg" alt="line">
+        <div class="sidebar__bottom">
+            <div class = 'toggle-switch'>
+            <label>
+                <input type = 'checkbox'>
+                <span class = 'slider'></span>
+            </label>
+            </div>
+            <div class="bottom__text">
+                <p>Night mode</p>
+            </div>
+        </div>
     </div>
-    <div class="header">
-      <form class="header__search">
-        <input type="text" class="search__line" placeholder="Search">
-        <img class="search__icon" src="./img/search.svg" alt="">
-      </form>
-      <div class="header__account">
-        <img src="./img/thomasPfp.svg" alt="">
-        <p>Thomas</p>
-        <button type="button" class="button"><img src="./img/chevron_down.svg" alt=""></button>
-        <button type="button" class="account__notification button"><img src="./img/Notification.svg" alt="">
-          <img class="notification__elypse__red" src="./img/notificationElypse.svg" alt="">
-        </button>
-      </div>
+    <div class="content">
+        <div class="header">
+            <div class="header__search">
+                <p>Search</p>
+                <img class="search__icon" src="./img/search.svg" alt="">
+            </div>
+            <div class="header__account">
+                <img src="./img/thomasPfp.svg" alt="">
+                    <p>Thomas</p>
+                <button type="button" class="button"><img src="./img/chevron_down.svg" alt=""></button>
+                <button type="button" class="account__notification button"><img src="./img/Notification.svg" alt="">
+                <img class="notification__elypse__red" src="./img/notificationElypse.svg" alt="">
+                </button>
+        </div>
+        </div>
+
+        <div class="discover">
+            <h1>Discover</h1>
+            <div class="big__cards">
+                <div class="card__blue">
+                    <img class="cardImage__blue" src="./img/blue_card_img.png">
+                    <div class="while">
+                        <h2>How to do
+                            Basic Jumping
+                            and how to
+                            landing safely</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 </body>
 </html>
