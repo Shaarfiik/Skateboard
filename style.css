@@ -1,83 +1,171 @@
-* {
+*{
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
-}
-
-html {
-    font-size: 14px;
-}
-
-body {
+    margin: 0;
+  }
+  
+  .page{
     background-color: #1F1D2B;
-}
-
-.page{
-    display: flex;
-    width: 100%;
-    max-width: 1200px;
-    margin-inline: 30px;
-    padding-inline: 20px;
-    margin-top: 10px;
     color: white;
-}
-
-.layout {
+    font-family: sans-serif;
+  }
+  
+  .layout{
     display: grid;
-    grid-template-columns: 160px 940px;
-    grid-column: 100px;
-    justify-content: space-between;
-}
-
-.sidebar{
-   display: grid;
-   grid-template-rows: 40px 170px 30px;
-   row-gap: 40px;
-   align-items: center;
-}
-
-.sidebar_logo {
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 20px; /* 100% */
+    grid-template-columns: 240px 1fr;
+  }
+  
+  .header{
+    margin-top: 0.8em;
+    padding: 2em;
     display: grid;
-}
-
-.sidebar_list_1 {
-    display: grid;
-    grid-template-rows: 20px;
-}
-
-.menu {
-    color: #808191;
-    font-family: Poppins;
-    font-size: 11px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 11px; /* 100% */
-    letter-spacing: 1.5px;
-}
-
-.list_content {
-    display: grid;
-    grid-template-rows: 78px 78px 78px 78px 78px;
-}
-
-.list_bottom {
-    display: flex;
+    grid-template-columns: 4fr 1fr;
+    height: 40px;
     align-items: center;
-
-}
-
-.list_square {
-    width: 32px;
-    height: 32px;
-    flex-shrink: 0;
-    border-radius: 12px;
-    opacity: 0.1;
-    background: #FFF;
-}
-
+  }
+  
+  .header__account{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 32px 64px 16px 1fr;
+    column-gap: 1em;
+    position: relative;
+  }
+  
+  input{
+    padding:4px 10px;
+    border:0;
+    font-size:16px;
+  }
+  .search__line{
+    width: 645px;
+    height: 40px;
+    color: #808191;
+    background-color: #353440;
+    border-radius: 10px;
+    font-size: 0.75rem;
+  }
+  
+  .header__search{
+    position: relative;
+  }
+  
+  .search__icon{
+    position: absolute;
+    top: 13px;
+    left: 616px;
+  }
+  
+  .sidebar{
+    width: 240px;
+    height: 100dvh;
+    color: #808191;
+    padding: 2em;
+  }
+  
+  .sidebar__logo{
+    font-size: 1.25rem;
+    padding-top: 1em;
+    color: white;
+  }
+  
+  .button{
+    outline: none;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  .account__notification{
+    position: relative;
+    position: absolute;
+    top: 0.5em;
+    left: 13em;
+  }
+  
+  .notification__elypse__red{
+    position: absolute;
+    top: -4px;
+    left: 10px;
+  }
+  
+  .sidebar__list{
+    font-weight: 700;
+    font-size: 0.875rem;
+    margin-top: 1em;
+  }
+  
+  .sidebar__insert{
+    font-size: 0.687rem;
+    text-transform: uppercase;
+    margin-top: 4em;
+  }
+  
+  li{
+    list-style-type: none;
+    grid-template-columns: 32px 1fr;
+    display: grid;
+    align-items: center;
+    column-gap: 1em;
+    margin-bottom: 2em;
+  }
+  
+  .sidebar__line{
+    margin-top: 1em;
+  }
+  
+  .sidebar__bottom{
+    position: relative;
+    display: inline-block;
+    width: 51px;
+    height: 31px;
+    margin-top: 2em;
+  }
+  
+  .sidebar__switch input {display:none;}
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 23px;
+    width: 23px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #6C5ECF;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #6C5ECF;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+  }
+  
+  .slider.round {
+    border-radius: 31px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
